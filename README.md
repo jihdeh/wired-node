@@ -1,6 +1,6 @@
 # Node assessment
 
-You are going to build a script (src/index.js) that transforms an array of expert ids into an array of summaries that shows the total bookings count grouped by the industry role of the experts.
+You are going to build a script located at `src/index.js` which transforms an array of expert ids into an array of summaries that shows the total bookings count grouped by the industry role of the experts, exluding industries that have 0 booking.
 
 You can use `getBookingsCountFromDb` to fetch the bookings count by expert id.
 

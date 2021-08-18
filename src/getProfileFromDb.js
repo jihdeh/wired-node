@@ -6,10 +6,9 @@ const profiles = {
 };
 
 async function getProfileFromDb(id) {
-  return new Promise(
-    (resolve) => setTimeout(() => resolve(profiles[id]),
-    2000
-  ));
+  return new Promise((resolve) =>
+    setTimeout(() => resolve(profiles[id]), 2000)
+  );
 }
 
-module.exports = getProfileFromDb
+module.exports = getProfileFromDb;

@@ -6,10 +6,9 @@ const bookings = {
 };
 
 async function getBookingsCountFromDb(id) {
-  return new Promise(
-    (resolve) => setTimeout(() => resolve(bookings[id]),
-    2000
-  ));
+  return new Promise((resolve) =>
+    setTimeout(() => resolve(bookings[id]), 2000)
+  );
 }
 
-module.exports = getBookingsCountFromDb
+module.exports = getBookingsCountFromDb;
