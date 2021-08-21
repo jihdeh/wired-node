@@ -3,8 +3,8 @@ const getProfileFromDb = require("./getProfileFromDb");
 
 const expertIds = [1, 2, 3, 4];
 
-let tempBookingCache = {};
-let tempProfileCache = {};
+const tempBookingCache = {};
+const tempProfileCache = {};
 
 const getBooking = async (id) => {
   if (!tempBookingCache[id]) {
@@ -50,7 +50,7 @@ const getResult = async (bookingCount, profilesId) => {
 const result = async () => {
   console.time("timer");
 
-  const bookingCount = await expertIds.reduce(async (_, ids) => {
+  const bookingCount = await expertIds.reduce((_, ids) => {
     const getBookingCount = getBooking(ids);
     return getBookingCount;
   }, 0);
