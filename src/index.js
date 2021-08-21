@@ -7,12 +7,9 @@ const tempBookingCache = {};
 const tempProfileCache = {};
 
 const getBooking = async (id) => {
-  if (!tempBookingCache[id]) {
-    const bookingCount = await getBookingsCountFromDb(id);
-    if (bookingCount) {
-      tempBookingCache[id] = bookingCount;
-      return tempBookingCache;
-    }
+  const bookingCount = await getBookingsCountFromDb(id);
+  if (bookingCount) {
+    tempBookingCache[id] = bookingCount;
   }
   return tempBookingCache;
 };
