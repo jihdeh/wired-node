@@ -7,6 +7,7 @@ You can use `getBookingsCountFromDb` to fetch the bookings count by expert id.
 You can use `getProfileFromDb` to fetch the profile by expert id. The profile contains the industry of the expert.
 
 ## Expected outcome
+
 ```
 [
   { industry: 'automotive', bookings: 15 },
@@ -15,9 +16,11 @@ You can use `getProfileFromDb` to fetch the profile by expert id. The profile co
 ```
 
 ## Extra credits
+
 The db calls are slow, can you make your script run fast?
 
 ## Running the script
+
 ```
 npm start
 ```
